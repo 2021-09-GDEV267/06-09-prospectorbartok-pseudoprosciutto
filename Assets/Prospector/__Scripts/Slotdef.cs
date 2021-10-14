@@ -2,8 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-
-
 // The SlotDef class is not a subclass of MonoBehaviour, so it doesn't need
 //   a separate C# file.
 
@@ -20,7 +18,6 @@ public class SlotDef
     public string type = "slot";
     public Vector2 stagger;
 }
-
 
 
 public class Layout : MonoBehaviour
