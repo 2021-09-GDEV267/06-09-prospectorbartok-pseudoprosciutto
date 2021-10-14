@@ -1,0 +1,20 @@
+[api-updater (non-obsolete-error-filter)] 10/13/2021 9:44:24 PM : Starting /Applications/Unity/EditorsFolder/2020.3.19f1/Unity.app/Contents/Tools/ScriptUpdater/APIUpdater.NonObsoleteApiUpdaterDetector.exe
+[api-updater (non-obsolete-error-filter)] 
+----------------------------------
+jit/startup time      : 3773.244ms
+moved types parse time: 262ms
+candidates parse time : 94ms
+C# parse time         : 2525ms
+candidates check time : 60ms
+console write time    : 0ms
+
+[api-updater (non-obsolete-error-filter)] 10/13/2021 10:03:20 PM : Starting /Applications/Unity/EditorsFolder/2020.3.19f1/Unity.app/Contents/Tools/ScriptUpdater/APIUpdater.NonObsoleteApiUpdaterDetector.exe
+[api-updater (non-obsolete-error-filter)] 
+----------------------------------
+jit/startup time      : 515.974ms
+moved types parse time: 75ms
+candidates parse time : 1ms
+C# parse time         : 617ms
+candidates check time : 59ms
+console write time    : 0ms
+
