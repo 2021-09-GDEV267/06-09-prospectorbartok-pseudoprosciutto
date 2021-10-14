@@ -2,6 +2,14 @@
 using System.Collections;
 using System.Collections.Generic;
 
+/// <summary>
+/// Card: The class for each individual card in the deck. The Card script
+/// also contains the CardDefinition class (which holds information about
+/// where sprites are to be positioned on each rank of card) and the
+/// Decorator class (which holds information about the decorators and pips
+/// described in the XML document—Figure 32.4 shows the differences between
+/// decorators and pips).
+/// </summary>
 public class Card : MonoBehaviour {
 
 	public string    suit;

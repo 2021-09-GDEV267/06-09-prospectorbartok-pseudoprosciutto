@@ -2,10 +2,15 @@
 using System.Collections;
 using System.Collections.Generic;
 
+/// <summary>
+/// Deck: The Deck class interprets the information in DeckXML.xml
+/// and uses that information to create an entire deck of cards.
+/// </summary>
 public class Deck : MonoBehaviour {
 
-[Header("Set in Inspector")]
+	[Header("Set in Inspector")]
 	//Suits
+	public bool startFaceUp = false;
 	public Sprite suitClub;
 	public Sprite suitDiamond;
 	public Sprite suitHeart;
@@ -18,6 +23,7 @@ public class Deck : MonoBehaviour {
 	public Sprite cardBackGold;
 	public Sprite cardFront;
 	public Sprite cardFrontGold;
+
 	
 	
 	// Prefabs
@@ -155,7 +161,8 @@ public class Deck : MonoBehaviour {
 		Sprite tS = null;
 		GameObject tGO = null;
 		SpriteRenderer tSR = null;  // so tempted to make a D&D ref here...
-		
+
+		//iterate through all of the card names
 		for (int i=0; i<cardNames.Count; i++) {
 			GameObject cgo = Instantiate(prefabCard) as GameObject;
 			cgo.transform.parent = deckAnchor;
@@ -238,6 +245,7 @@ public class Deck : MonoBehaviour {
 				tGO.name = "face";
 			}
 
+			//backs of card
 			tGO = Instantiate(prefabSprite) as GameObject;
 			tSR = tGO.GetComponent<SpriteRenderer>();
 			tSR.sprite = cardBack;
@@ -246,7 +254,7 @@ public class Deck : MonoBehaviour {
 			tSR.sortingOrder = 2;
 			tGO.name = "back";
 			card.back = tGO;
-			card.faceUp = false;
+			card.faceUp = startFaceUp;
 			
 			cards.Add (card);
 		} // for all the Cardnames	

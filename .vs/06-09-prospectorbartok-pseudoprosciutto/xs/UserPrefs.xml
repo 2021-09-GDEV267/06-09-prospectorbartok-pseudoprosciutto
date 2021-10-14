@@ -1,0 +1,16 @@
+﻿<Properties StartupConfiguration="{F34A5F73-13C0-3725-6877-FA8D2CE17546}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Prospector/__Scripts/Prospector.cs">
+    <Files>
+      <File FileName="Assets/Prospector/__Scripts/Card.cs" Line="14" Column="1" />
+      <File FileName="Assets/Prospector/__Scripts/Deck.cs" Line="62" Column="26" />
+      <File FileName="Assets/Prospector/__Scripts/Prospector.cs" Line="22" Column="23" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="5cf9235e-53f3-45f5-85d6-2013281f28a7" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
