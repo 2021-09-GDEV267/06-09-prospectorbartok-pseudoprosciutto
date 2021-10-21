@@ -26,6 +26,9 @@ public class CardProspector : Card
     // The SlotDef class stores information pulled in from the LayoutXML <slot>
     public SlotDef slotDef;
 
+    // the card will know if it is a gold card or not
+    public bool isGoldCard;
+
     override public void OnMouseUpAsButton()
     {
 

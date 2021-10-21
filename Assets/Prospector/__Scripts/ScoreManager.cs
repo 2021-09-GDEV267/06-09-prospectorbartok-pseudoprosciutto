@@ -28,6 +28,10 @@ public class ScoreManager : MonoBehaviour
     public int scoreRun = 0;
     public int score = 0;
 
+    public int goldCardMultiplier = 2;
+
+
+
     void Awake()
     {
         if (S == null)
@@ -88,28 +92,20 @@ public class ScoreManager : MonoBehaviour
             case eScoreEvent.gameWin:  // Won the round
 
             case eScoreEvent.gameLoss: // Lost the round
-
                 chain = 0;             // resets the score chain
-
                 score += scoreRun;     // add scoreRun to total score
-
                 scoreRun = 0;          // reset scoreRun
-
                 break;
-
-
-
-
-
 
             case eScoreEvent.mine:    // Remove a mine card
-
                 chain++;              // increase the score chain
-
                 scoreRun += chain;    // add score for this card to run
-
                 break;
 
+            case eScoreEvent.mineGold:    // Remove a mine card
+                chain++;              // increase the score chain
+                scoreRun += chain*2;    // add score for this card to run
+                break;
         }
 
 
@@ -118,58 +114,35 @@ public class ScoreManager : MonoBehaviour
 
         switch (evt)
         {
-
             case eScoreEvent.gameWin:
 
                 // If it's a win, add the score to the next round
-
                 // static fields are NOT reset by SceneManager.LoadScene()
 
                 SCORE_FROM_PREV_ROUND = score;
-
                 print("You won this round! Round score: " + score);
-
                 break;
-
-
-
 
             case eScoreEvent.gameLoss:
 
                 // If it's a loss, check against the high score
-
                 if (HIGH_SCORE <= score)
                 {
-
                     print("You got the high score! High score: " + score);
-
                     HIGH_SCORE = score;
-
                     PlayerPrefs.SetInt("ProspectorHighScore", score);
-
                 }
                 else
                 {
-
                     print("Your final score for the game was: " + score);
-
                 }
 
                 break;
-
-
-
 
             default:
 
                 print("score: " + score + " scoreRun:" + scoreRun + " chain:" + chain);
-
                 break;
-
         }
-
     }
-
-
-
 }

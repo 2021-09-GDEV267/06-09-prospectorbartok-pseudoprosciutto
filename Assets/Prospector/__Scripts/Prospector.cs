@@ -42,6 +42,8 @@ public class Prospector : MonoBehaviour
 	
 	public FloatingScore fsRun;
 
+	
+
 	void Awake()
 	{
 		S = this;
@@ -123,7 +125,7 @@ public class Prospector : MonoBehaviour
 		CardProspector tCP;
 		foreach (Card tCD in lCD)
 		{
-			tCP = tCD as CardProspector;                                     // a
+			tCP = tCD as CardProspector;                              
 			lCP.Add(tCP);
 		}
 
@@ -186,9 +188,10 @@ public class Prospector : MonoBehaviour
 	// Arranges all the cards of the drawPile to show how many are left
 	void UpdateDrawPile()
 	{
-		CardProspector cd;
-		// Go through all the cards of the drawPile
 
+		CardProspector cd;
+
+		// Go through all the cards of the drawPile
 		for (int i = 0; i < drawPile.Count; i++)
 		{
 			cd = drawPile[i];
@@ -225,7 +228,7 @@ public class Prospector : MonoBehaviour
 
 		CardProspector cp;
 		// Follow the layout
-
+		//draws first 28 caqrds in tableau
 		foreach (SlotDef tSD in layout.slotDefs)
 		{
 			// ^ Iterate through all the SlotDefs in the layout.slotDefs as tSD
@@ -247,6 +250,15 @@ public class Prospector : MonoBehaviour
 			cp.state = eCardState.tableau;
 
 			cp.SetSortingLayerName(tSD.layerName); // Set the sorting layers
+
+			//set cards to gold
+			if (Random.value <= .1f)
+			{
+				cp.isGoldCard = true;
+				cp.back.GetComponent<SpriteRenderer>().sprite = deck.cardBackGold;
+				cp.GetComponent<SpriteRenderer>().sprite = deck.cardFrontGold;
+			}
+			//cp.front.GetComponent<SpriteRenderer>().sprite = deck.cardBackGold;
 
 			tableau.Add(cp); // Add this CardProspector to the List<> tableau    
 		}
@@ -283,16 +295,12 @@ public class Prospector : MonoBehaviour
 		return (null);
 	}
 
-
-
 	// This turns cards in the Mine face-up or face-down
-
 	void SetTableauFaces()
 	{
 		foreach (CardProspector cd in tableau)
 		{
 			bool faceUp = true; // Assume the card will be face-up
-
 			foreach (CardProspector cover in cd.hiddenBy)
 			{
 				// If either of the covering cards are in the tableau
@@ -301,7 +309,9 @@ public class Prospector : MonoBehaviour
 					faceUp = false; // then this card is face-down
 				}
 			}
+
 			cd.faceUp = faceUp; // Set the value on the card
+
 		}
 	}
 
@@ -351,9 +361,16 @@ public class Prospector : MonoBehaviour
 								   // Clicking a card in the tableau will check if it's a valid play
 				SetTableauFaces(); // Update tableau card face-ups
 
-				ScoreManager.EVENT(eScoreEvent.mine);
-				FloatingScoreHandler(eScoreEvent.mine);
-
+				if (cd.isGoldCard)
+				{
+					ScoreManager.EVENT(eScoreEvent.mineGold);
+					FloatingScoreHandler(eScoreEvent.mine);
+				}
+				else
+				{
+					ScoreManager.EVENT(eScoreEvent.mine);
+					FloatingScoreHandler(eScoreEvent.mine);
+				}
 				break;
 
 		}
