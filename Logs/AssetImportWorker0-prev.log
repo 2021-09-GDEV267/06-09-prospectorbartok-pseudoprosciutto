@@ -22,25 +22,25 @@ AssetImportWorker0
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-62993
+54156
 Successfully changed project path to: /Volumes/UnityHDD1/School Work/GDEV 267/06-09-prospectorbartok-pseudoprosciutto
 /Volumes/UnityHDD1/School Work/GDEV 267/06-09-prospectorbartok-pseudoprosciutto
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 114.10 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 55.35 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.19f1 (68f137dc9bbe)
 [Subsystems] Discovering subsystems at path /Applications/Unity/EditorsFolder/2020.3.19f1/Unity.app/Contents/Resources/UnitySubsystems
 [Subsystems] Discovering subsystems at path /Volumes/UnityHDD1/School Work/GDEV 267/06-09-prospectorbartok-pseudoprosciutto/Assets
 GfxDevice: creating device client; threaded=0
-2021-10-13 18:16:08.651 Unity[10924:172110] Color LCD preferred device: NVIDIA GeForce GT 650M (high power)
-2021-10-13 18:16:08.651 Unity[10924:172110] Metal devices available: 2
-2021-10-13 18:16:08.651 Unity[10924:172110] 0: NVIDIA GeForce GT 650M (high power)
-2021-10-13 18:16:08.651 Unity[10924:172110] 1: Intel HD Graphics 4000 (low power)
-2021-10-13 18:16:08.652 Unity[10924:172110] Using device NVIDIA GeForce GT 650M (high power)
+2021-10-20 11:43:15.325 Unity[38098:428511] Color LCD preferred device: NVIDIA GeForce GT 650M (high power)
+2021-10-20 11:43:15.325 Unity[38098:428511] Metal devices available: 2
+2021-10-20 11:43:15.325 Unity[38098:428511] 0: NVIDIA GeForce GT 650M (high power)
+2021-10-20 11:43:15.325 Unity[38098:428511] 1: Intel HD Graphics 4000 (low power)
+2021-10-20 11:43:15.341 Unity[38098:428511] Using device NVIDIA GeForce GT 650M (high power)
 Initializing Metal device caps: NVIDIA GeForce GT 650M
 Initialize mono
 Mono path[0] = '/Applications/Unity/EditorsFolder/2020.3.19f1/Unity.app/Contents/Managed'
 Mono path[1] = '/Applications/Unity/EditorsFolder/2020.3.19f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = '/Applications/Unity/EditorsFolder/2020.3.19f1/Unity.app/Contents/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56924
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56098
 Begin MonoManager ReloadAssembly

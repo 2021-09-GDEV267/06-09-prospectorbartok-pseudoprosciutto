@@ -45,7 +45,8 @@ public class Deck : MonoBehaviour {
 	// called by Prospector when it is ready
 	public void InitDeck(string deckXMLText) {
 		// from page 576
-		if( GameObject.Find("_Deck") == null) {
+		if( GameObject.Find("_Deck") == null)
+		{
 			GameObject anchorGO = new GameObject("_Deck");
 			deckAnchor = anchorGO.transform;
 		}
