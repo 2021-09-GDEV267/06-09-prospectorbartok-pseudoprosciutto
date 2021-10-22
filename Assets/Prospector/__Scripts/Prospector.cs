@@ -524,7 +524,9 @@ public class Prospector : MonoBehaviour
 				fsPts.Add(p0);
 				fsPts.Add(fsPosMid);
 				fsPts.Add(fsPosRun);
+
 				fs = Scoreboard.S.CreateFloatingScore(ScoreManager.CHAIN, fsPts);
+
 				fs.fontSizes = new List<float>(new float[] { 4, 50, 28 });
 
 				if (fsRun == null)
@@ -537,6 +539,8 @@ public class Prospector : MonoBehaviour
 					fs.reportFinishTo = fsRun.gameObject;
 				}
 				break;
+
+
 		}
 	}
 }
