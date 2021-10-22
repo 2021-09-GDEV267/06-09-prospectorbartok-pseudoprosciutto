@@ -10,13 +10,13 @@ using UnityEngine.UI;
 /// into a game. Prospector collects the cards into various piles
 /// (like the draw pile and discard pile) and manages game logic.
 /// </summary>
-public class Prospector : MonoBehaviour
+public class EZProspector : MonoBehaviour
 {
-	static public Prospector S;
+	static public EZProspector S;
 
 	[Header("Set in Inspector")]
 	[Range(0.0f,1.0f)]
-	public float randomizeGoldCards=.1f;
+	public float randomizeGoldCards =.1f;
 	public TextAsset deckXML;
 	public TextAsset layoutXML;
 	public float xOffset = 3;
@@ -33,7 +33,7 @@ public class Prospector : MonoBehaviour
 	public Text gameOverText, roundResultText, highScoreText;
 
 	[Header("Set Dynamically")]
-	public Deck deck;
+	public EZDeck deck;
 	public Layout layout;
 	public List<CardProspector> drawPile;
 	public Transform layoutAnchor;
@@ -55,7 +55,7 @@ public class Prospector : MonoBehaviour
 	{
 		Scoreboard.S.score = ScoreManager.SCORE;
 
-		deck = GetComponent<Deck>(); //get the deck
+		deck = GetComponent<EZDeck>(); //get the deck
 		deck.InitDeck(deckXML.text); // pass DeckXML to it
 		Deck.Shuffle(ref deck.cards);// thus shuffes deck by reference
 

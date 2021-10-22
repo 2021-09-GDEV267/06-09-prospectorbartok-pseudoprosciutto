@@ -33,12 +33,21 @@ public class CardProspector : Card
     {
 
         // Call the CardClicked method on the Prospector singleton
+        if (EZProspector.S != null)
+        {
+            EZProspector.S.CardClicked(this);
 
-        Prospector.S.CardClicked(this);
+            // Also call the base class (Card.cs) version of this method
 
-        // Also call the base class (Card.cs) version of this method
+            base.OnMouseUpAsButton();
+        }
+        else
+        {
+            Prospector.S.CardClicked(this);
 
-        base.OnMouseUpAsButton();                                                  // a
+            // Also call the base class (Card.cs) version of this method
 
+            base.OnMouseUpAsButton();                                                  // a
+        }
     }
 }
