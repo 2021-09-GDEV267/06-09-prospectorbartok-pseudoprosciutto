@@ -159,7 +159,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.95}
   m_AnchorMax: {x: 0.5, y: 0.95}
-  m_AnchoredPosition: {x: 0, y: -346}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 200, y: 44}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &226884127
@@ -533,6 +533,7 @@ MonoBehaviour:
   chain: 0
   scoreRun: 0
   score: 0
+  goldCardMultiplier: 2
 --- !u!1 &1177653121
 GameObject:
   m_ObjectHideFlags: 0

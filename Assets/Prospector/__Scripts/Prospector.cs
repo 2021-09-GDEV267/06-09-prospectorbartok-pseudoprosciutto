@@ -12,10 +12,11 @@ using UnityEngine.UI;
 /// </summary>
 public class Prospector : MonoBehaviour
 {
-
 	static public Prospector S;
 
 	[Header("Set in Inspector")]
+	[Range(0.0f,1.0f)]
+	public float randomizeGoldCards;
 	public TextAsset deckXML;
 	public TextAsset layoutXML;
 	public float xOffset = 3;
@@ -252,7 +253,7 @@ public class Prospector : MonoBehaviour
 			cp.SetSortingLayerName(tSD.layerName); // Set the sorting layers
 
 			//set cards to gold
-			if (Random.value <= .1f)
+			if (Random.value <= randomizeGoldCards)
 			{
 				cp.isGoldCard = true;
 				cp.back.GetComponent<SpriteRenderer>().sprite = deck.cardBackGold;
