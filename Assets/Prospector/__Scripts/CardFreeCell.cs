@@ -3,23 +3,23 @@ using System.Collections.Generic;
 using UnityEngine;
 
 // An enum defines a variable type with a few prenamed values        
-public enum eCardState
+public enum FCCardState
 {
     drawpile,
     tableau,
     target,
     discard,
-    disregard
+
 }
 
-public class CardProspector : Card
+public class CardFreeCell : Card
 { // Make sure CardProspector extends Card
     [Header("Set Dynamically: CardProspector")]
     // This is how you use the enum eCardState
-    public eCardState state = eCardState.drawpile;
+    public FCCardState state = FCCardState.drawpile;
 
     // The hiddenBy list stores which other cards will keep this one face down
-    public List<CardProspector> hiddenBy = new List<CardProspector>();
+    public List<CardFreeCell> hiddenBy = new List<CardFreeCell>();
 
     // The layoutID matches this card to the tableau XML if it's a tableau card
     public int layoutID;
@@ -34,9 +34,9 @@ public class CardProspector : Card
     {
 
         // Call the CardClicked method on the Prospector singleton
-        if (EZProspector.S != null)
+        if (Gaps.S != null)
         {
-            EZProspector.S.CardClicked(this);
+     //       EZProspector.S.CardClicked(this);
 
             // Also call the base class (Card.cs) version of this method
 
@@ -44,7 +44,7 @@ public class CardProspector : Card
         }
         else
         {
-            Prospector.S.CardClicked(this);
+      //      Prospector.S.CardClicked(this);
 
             // Also call the base class (Card.cs) version of this method
 
