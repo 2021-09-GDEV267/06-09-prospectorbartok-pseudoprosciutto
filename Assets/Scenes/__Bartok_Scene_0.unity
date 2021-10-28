@@ -203,6 +203,7 @@ GameObject:
   - component: {fileID: 827460510}
   - component: {fileID: 827460509}
   - component: {fileID: 827460514}
+  - component: {fileID: 827460511}
   m_Layer: 0
   m_Name: _MainCamera
   m_TagString: MainCamera
@@ -226,6 +227,24 @@ Behaviour:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 827460508}
   m_Enabled: 1
+--- !u!114 &827460511
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 827460508}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d89c983fe713349d3ac7b23488084032, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  deckXML: {fileID: 4900000, guid: c76312a0fb08948699e1abf935e4a957, type: 3}
+  layoutXML: {fileID: 4900000, guid: 61f3f05951a2f4d98b35bddbc7549908, type: 3}
+  layoutCenter: {x: 0, y: 0, z: 0}
+  deck: {fileID: 0}
+  drawPile: []
+  discardPile: []
 --- !u!20 &827460512
 Camera:
   m_ObjectHideFlags: 0
