@@ -1,0 +1,30 @@
+﻿<Properties StartupConfiguration="{F34A5F73-13C0-3725-6877-FA8D2CE17546}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Prospector/Resources/BartokLayoutXML.xml">
+    <Files>
+      <File FileName="Assets/Prospector/__Scripts/CardBartok.cs" Line="121" Column="2" />
+      <File FileName="Assets/Prospector/__Scripts/Bartok.cs" Line="1" Column="1" />
+      <File FileName="Assets/Prospector/__Scripts/CardProspector.cs" Line="51" Column="10" />
+      <File FileName="Assets/Prospector/__Scripts/Prospector.cs" Line="134" Column="3" />
+      <File FileName="Assets/Prospector/__Scripts/Card.cs" />
+      <File FileName="Assets/Prospector/__Scripts/Deck.cs" />
+      <File FileName="Assets/Prospector/__Scripts/Slotdef.cs" />
+      <File FileName="Assets/Prospector/__Scripts/Layout.cs" />
+      <File FileName="Assets/Prospector/Resources/DeckXML.xml" />
+      <File FileName="Assets/Prospector/__Scripts/Utils.cs" Line="289" Column="3" />
+      <File FileName="Assets/Prospector/__Scripts/ScoreManager.cs" />
+      <File FileName="Assets/Prospector/__Scripts/FloatingScore.cs" />
+      <File FileName="Assets/Prospector/__Scripts/Scoreboard.cs" />
+      <File FileName="Assets/Prospector/Resources/ez-DeckXML.xml" Line="37" Column="1" />
+      <File FileName="Assets/Prospector/__Scripts/EZDeck.cs" Line="192" Column="1" />
+      <File FileName="Assets/Prospector/__Scripts/EZProspector.cs" Line="19" Column="38" />
+      <File FileName="Assets/Prospector/Resources/BartokLayoutXML.xml" Line="45" Column="7" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="a85f2968-efb4-4eaa-a373-b9ceb5b3fd25" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
