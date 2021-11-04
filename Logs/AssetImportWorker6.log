@@ -16,11 +16,11 @@ COMMAND LINE ARGUMENTS:
 -batchMode
 -noUpm
 -name
-AssetImportWorker0
+AssetImportWorker6
 -projectPath
 /Volumes/UnityHDD1/School Work/GDEV 267/06-09-prospectorbartok-pseudoprosciutto
 -logFile
-Logs/AssetImportWorker0.log
+Logs/AssetImportWorker6.log
 -srvPort
 52753
 Successfully changed project path to: /Volumes/UnityHDD1/School Work/GDEV 267/06-09-prospectorbartok-pseudoprosciutto
