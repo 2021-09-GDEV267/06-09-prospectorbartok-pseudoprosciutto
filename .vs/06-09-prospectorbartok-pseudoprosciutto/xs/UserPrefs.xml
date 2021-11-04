@@ -1,12 +1,13 @@
 ﻿<Properties StartupConfiguration="{F34A5F73-13C0-3725-6877-FA8D2CE17546}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/CardGames/__Scripts/Bartok/Player.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/CardGames/__Scripts/Bartok/TurnLight.cs">
     <Files>
-      <File FileName="Assets/CardGames/__Scripts/Bartok/CardBartok.cs" Line="1" Column="1" />
-      <File FileName="Assets/CardGames/__Scripts/Bartok/Bartok.cs" Line="48" Column="1" />
-      <File FileName="Assets/CardGames/Resources/BartokLayoutXML.xml" Line="22" Column="7" />
-      <File FileName="Assets/CardGames/__Scripts/Bartok/BartokLayout.cs" Line="25" Column="1" />
+      <File FileName="Assets/CardGames/__Scripts/Bartok/CardBartok.cs" Line="121" Column="22" />
+      <File FileName="Assets/CardGames/__Scripts/Bartok/Bartok.cs" Line="232" Column="48" />
+      <File FileName="Assets/CardGames/Resources/BartokLayoutXML.xml" Line="1" Column="6" />
+      <File FileName="Assets/CardGames/__Scripts/Bartok/BartokLayout.cs" Line="19" Column="17" />
       <File FileName="Assets/CardGames/__Scripts/Slotdef.cs" Line="10" Column="50" />
-      <File FileName="Assets/CardGames/__Scripts/Bartok/Player.cs" Line="5" Column="20" />
+      <File FileName="Assets/CardGames/__Scripts/Bartok/Player.cs" Line="102" Column="29" />
+      <File FileName="Assets/CardGames/__Scripts/Bartok/TurnLight.cs" Line="21" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />

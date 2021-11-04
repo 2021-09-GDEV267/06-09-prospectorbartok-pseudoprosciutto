@@ -35,8 +35,17 @@ public class CardBartok : Card
     public List<Vector3> bezierPts;
     public List<Quaternion> bezierRots;
     public float timeStart, timeDuration;
+
+    public int eventualSortOrder;
+    public string eventualSortLayer;
+
+
     // When the card is done moving, it will call reportFinishTo.SendMessage()
     public GameObject reportFinishTo = null;
+
+    [System.NonSerialized]
+    public Player callbackPlayer = null;
+
     // MoveTo tells the card to interpolate to a new position and rotation
     public void MoveTo(Vector3 ePos, Quaternion eRot)
     {
@@ -69,22 +78,22 @@ public class CardBartok : Card
     void Update()
     {
         switch (state)
-        {                                                   // f
+        {
             case CBState.toHand:
             case CBState.toTarget:
             case CBState.toDrawpile:
             case CBState.to:
-                float u = (Time.time - timeStart) / timeDuration;            // g
+                float u = (Time.time - timeStart) / timeDuration;
                 float uC = Easing.Ease(u, MOVE_EASING);
 
                 if (u < 0)
-                {                                                 // h
+                {
                     transform.localPosition = bezierPts[0];
                     transform.rotation = bezierRots[0];
                     return;
                 }
                 else if (u >= 1)
-                {                                          // i
+                {
                     uC = 1;
                     // Move from the to... state to the proper next state
                     if (state == CBState.toHand) state = CBState.hand;
@@ -103,19 +112,59 @@ public class CardBartok : Card
                         reportFinishTo.SendMessage("CBCallback", this);
                         reportFinishTo = null;
                     }
+
+                    else if (callbackPlayer != null)
+                    {
+                        // If there's a callback Player
+                        // Call CBCallback directly on the Player
+                        callbackPlayer.CBCallback(this);
+                        callbackPlayer = null;
+                    }
+
                     else
                     { // If there is nothing to callback
-                        // Just let it stay still.
+                      // Just let it stay still.
                     }
                 }
                 else
-                { // Normal interpolation behavior (0 <= u < 1)          // k
+                { // Normal interpolation behavior (0 <= u < 1)       
                     Vector3 pos = Utils.Bezier(uC, bezierPts);
                     transform.localPosition = pos;
                     Quaternion rotQ = Utils.Bezier(uC, bezierRots);
                     transform.rotation = rotQ;
+
+
+                    if (u > 0.5f)
+                    {                                           // a
+                        SpriteRenderer sRend = spriteRenderers[0];
+                        if (sRend.sortingOrder != eventualSortOrder)
+                        {
+                            // Jump to the proper sort order
+                            SetSortOrder(eventualSortOrder);
+                        }
+                        if (sRend.sortingLayerName != eventualSortLayer)
+                        {
+                            // Jump to the proper sort layer
+                            SetSortingLayerName(eventualSortLayer);
+                        }
+                    }
                 }
                 break;
         }
+    }
+
+    // This allows the card to react to being clicked
+
+    override public void OnMouseUpAsButton()
+    {
+
+        // Call the CardClicked method on the Bartok singleton
+
+        Bartok.S.CardClicked(this);                                          // a
+
+        // Also call the base class (Card.cs) version of this method
+
+        base.OnMouseUpAsButton();
+
     }
 }
