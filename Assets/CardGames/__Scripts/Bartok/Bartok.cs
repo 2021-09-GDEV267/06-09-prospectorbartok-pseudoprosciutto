@@ -157,12 +157,12 @@ void Start()
 
     public void CardClicked(CardBartok tCB)
     {
-        if (CURRENT_PLAYER.type != PlayerType.human) return;                 // a
-        if (phase == TurnPhase.waiting) return;                              // b
+        if (CURRENT_PLAYER.type != PlayerType.human) return;                 
+        if (phase == TurnPhase.waiting) return;                              
 
         switch (tCB.state)
-        {                                                 // c
-            case CBState.drawpile:                                           // d
+        {                                                 
+            case CBState.drawpile:                                           
                 // Draw the top card, not necessarily the one clicked.
                 CardBartok cb = CURRENT_PLAYER.AddCard(Draw());
                 cb.callbackPlayer = CURRENT_PLAYER;
@@ -170,7 +170,7 @@ void Start()
                 phase = TurnPhase.waiting;
                 break;
 
-            case CBState.hand:                                               // e
+            case CBState.hand:                                               
                 // Check to see whether the card is valid
                 if (ValidPlay(tCB))
                 {
@@ -178,19 +178,20 @@ void Start()
                     MoveToTarget(tCB);
                     tCB.callbackPlayer = CURRENT_PLAYER;
                     Utils.tr("Bartok:CardClicked()", "Play", tCB.name,
-                         targetCard.name + " is target");                    // f
+                         targetCard.name + " is target");                    
                     phase = TurnPhase.waiting;
                 }
                 else
                 {
                     // Just ignore it but report what the player tried
                     Utils.tr("Bartok:CardClicked()", "Attempted to Play",
-                        tCB.name, targetCard.name + " is target");            // f
+                        tCB.name, targetCard.name + " is target");            
                 }
                 break;
         }
     }
 
+// int num = -1 here is a default value. overloading the method with a default if there is no int naturally.
     public void PassTurn(int num = -1)
     {                                       // f
         // If no number was passed in, pick the next player
