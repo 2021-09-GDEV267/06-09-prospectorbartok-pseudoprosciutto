@@ -15,11 +15,19 @@ C:/Users/G00204515/Documents/GitHub/06-09-prospectorbartok-pseudoprosciutto
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
+<<<<<<< HEAD
 61048
 Successfully changed project path to: C:/Users/G00204515/Documents/GitHub/06-09-prospectorbartok-pseudoprosciutto
 C:/Users/G00204515/Documents/GitHub/06-09-prospectorbartok-pseudoprosciutto
 Using Asset Import Pipeline V2.
 Refreshing native plugins compatible for Editor in 21.76 ms, found 2 plugins.
+=======
+50860
+Successfully changed project path to: C:/Users/G00204515/Documents/GitHub/06-09-prospectorbartok-pseudoprosciutto
+C:/Users/G00204515/Documents/GitHub/06-09-prospectorbartok-pseudoprosciutto
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 22.65 ms, found 2 plugins.
+>>>>>>> parent of 5b7d44c (new changes)
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.1.7f1 (d91830b65d9b)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.1.7f1/Editor/Data/Resources/UnitySubsystems
@@ -35,28 +43,47 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.1.7f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.1.7f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.1.7f1/Editor/Data/MonoBleedingEdge/etc'
+<<<<<<< HEAD
 Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56564
+=======
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56588
+>>>>>>> parent of 5b7d44c (new changes)
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.1.7f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.1.7f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+<<<<<<< HEAD
 Registered in 0.001578 seconds.
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
 Refreshing native plugins compatible for Editor in 22.05 ms, found 2 plugins.
+=======
+Registered in 0.001640 seconds.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 22.03 ms, found 2 plugins.
+>>>>>>> parent of 5b7d44c (new changes)
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.329 seconds
+- Completed reload, in  1.514 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
+<<<<<<< HEAD
 Registered in 0.001917 seconds.
+=======
+Registered in 0.001961 seconds.
+>>>>>>> parent of 5b7d44c (new changes)
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.26 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.27 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
+<<<<<<< HEAD
 - Completed reload, in  0.765 seconds
+=======
+- Completed reload, in  0.792 seconds
+>>>>>>> parent of 5b7d44c (new changes)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
@@ -68,6 +95,147 @@ System memory in use before: 68.5 MB.
 System memory in use after: 68.6 MB.
 
 Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 1914.
+<<<<<<< HEAD
 Total: 1.926300 ms (FindLiveObjects: 0.112800 ms CreateObjectMapping: 0.038400 ms MarkObjects: 1.733900 ms  DeleteObjects: 0.040500 ms)
+=======
+Total: 1.845400 ms (FindLiveObjects: 0.138900 ms CreateObjectMapping: 0.040500 ms MarkObjects: 1.619200 ms  DeleteObjects: 0.046300 ms)
 
+========================================================================
+Received Import Request.
+  path: Assets/Scenes/Bartok
+  artifactKey: Guid(fd4af5e3e6ea89348bf46fcc56452926) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Bartok using Guid(fd4af5e3e6ea89348bf46fcc56452926) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '990a6ca568c7cfcfbc36d9cc575b0cef') in 0.006911 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000232 seconds.
+  path: Assets/Scenes/Bartok/__Bartok_Scene_0.unity
+  artifactKey: Guid(5b58a210bf18c43f1b87ddddabfba024) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Bartok/__Bartok_Scene_0.unity using Guid(5b58a210bf18c43f1b87ddddabfba024) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4f0b6f2b07bf87234620ad8376efb23e') in 0.010660 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.010981 seconds.
+  path: Assets/Scenes/Bartok/__Bartok_Scene_1_Animation.unity
+  artifactKey: Guid(ce7056a80f334314fb0ec0473d210b97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Bartok/__Bartok_Scene_1_Animation.unity using Guid(ce7056a80f334314fb0ec0473d210b97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2068bb3191948861cb0f354ba35f3bdf') in 0.004945 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002060 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.27 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.801 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.27 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1458 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 68.3 MB.
+System memory in use after: 68.4 MB.
+
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 1916.
+Total: 1.669600 ms (FindLiveObjects: 0.104200 ms CreateObjectMapping: 0.039200 ms MarkObjects: 1.514900 ms  DeleteObjects: 0.010500 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 176.226618 seconds.
+  path: Assets/CardGames/__Scripts
+  artifactKey: Guid(c8f49f6911d844ab5b78c58b5127368a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CardGames/__Scripts using Guid(c8f49f6911d844ab5b78c58b5127368a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '638b49adda74c8dc6b046c45e7b9e78d') in 0.006722 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.567750 seconds.
+  path: Assets/CardGames/__Scripts/Bartok
+  artifactKey: Guid(8676f2d93eae04f30a68f4d532b29bd9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CardGames/__Scripts/Bartok using Guid(8676f2d93eae04f30a68f4d532b29bd9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0e3c0667058efdc55a238785858b85ff') in 0.002836 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.743840 seconds.
+  path: Assets/CardGames/__Scripts/Bartok/Bartok.cs
+  artifactKey: Guid(d89c983fe713349d3ac7b23488084032) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CardGames/__Scripts/Bartok/Bartok.cs using Guid(d89c983fe713349d3ac7b23488084032) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4712f1d6d4b1d5adbd20f6380ec7e5f5') in 0.055910 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 743.337184 seconds.
+  path: Assets/CardGames/_Prefabs/PrefabCard.prefab
+  artifactKey: Guid(ee93767be21efa14eaa16db1093e90b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CardGames/_Prefabs/PrefabCard.prefab using Guid(ee93767be21efa14eaa16db1093e90b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '28f22cfd1393a1a47f540fd8fd5f1417') in 0.083185 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000100 seconds.
+  path: Assets/CardGames/_Prefabs/PrefabSprite.prefab
+  artifactKey: Guid(12a0355f16a4e3040b7c1daff1c8ed35) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CardGames/_Prefabs/PrefabSprite.prefab using Guid(12a0355f16a4e3040b7c1daff1c8ed35) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '29a054f463a7161d60149eae85e548ce') in 0.006051 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000160 seconds.
+  path: Assets/CardGames/_Prefabs/PrefabFloatingScore.prefab
+  artifactKey: Guid(d325e829d1a384a13857e92bce45cf9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CardGames/_Prefabs/PrefabFloatingScore.prefab using Guid(d325e829d1a384a13857e92bce45cf9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6a2b5a3a7872ad299d5e4675030bfe75') in 0.011842 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000140 seconds.
+  path: Assets/CardGames/_Prefabs/PrefabCard_Bartok.prefab
+  artifactKey: Guid(86116a0c5f5254d23ba5ea46856ae738) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CardGames/_Prefabs/PrefabCard_Bartok.prefab using Guid(86116a0c5f5254d23ba5ea46856ae738) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a8770b02d0ef3aa805f52320896c923c') in 0.010512 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.328019 seconds.
+  path: Assets/CardGames/Materials/BartokBackground.mat
+  artifactKey: Guid(118f382cf8b014034864bd764a931797) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CardGames/Materials/BartokBackground.mat using Guid(118f382cf8b014034864bd764a931797) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a8a142afff52d889efee2161292e85f5') in 0.133677 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000161 seconds.
+  path: Assets/CardGames/Materials/Yellow_Color.mat
+  artifactKey: Guid(f22ddb3a69622bf40a5889a434c7350e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CardGames/Materials/Yellow_Color.mat using Guid(f22ddb3a69622bf40a5889a434c7350e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e6109d0a432ee7d1373e4215fc163560') in 0.009673 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000136 seconds.
+  path: Assets/CardGames/Materials/Green_Color.mat
+  artifactKey: Guid(215edca2455aa0746b8f3ab0193e08d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CardGames/Materials/Green_Color.mat using Guid(215edca2455aa0746b8f3ab0193e08d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '21ae09dc18bb4821238c3e59398d56dc') in 0.010964 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000108 seconds.
+  path: Assets/CardGames/Materials/Blue_Color.mat
+  artifactKey: Guid(552f15767c2495c44b9aba4c8dc39f3a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CardGames/Materials/Blue_Color.mat using Guid(552f15767c2495c44b9aba4c8dc39f3a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8c7217e9d7e9a0df6b9298cfda3b81c0') in 0.012540 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000122 seconds.
+  path: Assets/CardGames/Materials/Red_Color.mat
+  artifactKey: Guid(1e90e44321bebe146951437a22320156) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CardGames/Materials/Red_Color.mat using Guid(1e90e44321bebe146951437a22320156) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4b142fbbd38e942e19fde043407f1be6') in 0.009432 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001962 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.26 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.733 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.31 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1458 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 72.6 MB.
+System memory in use after: 72.7 MB.
+
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 1960.
+Total: 1.654800 ms (FindLiveObjects: 0.125200 ms CreateObjectMapping: 0.047800 ms MarkObjects: 1.469400 ms  DeleteObjects: 0.011400 ms)
+>>>>>>> parent of 5b7d44c (new changes)
+
+========================================================================
+Received Import Request.
+  Time since last request: 847.668718 seconds.
+  path: Assets/CardGames/__Scripts/Bartok/Bartok.cs
+  artifactKey: Guid(d89c983fe713349d3ac7b23488084032) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CardGames/__Scripts/Bartok/Bartok.cs using Guid(d89c983fe713349d3ac7b23488084032) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd1c943974d783e2aca67f5693f63609f') in 0.003373 seconds 
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file
